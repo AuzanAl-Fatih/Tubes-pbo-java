@@ -28,6 +28,7 @@ public class obat extends javax.swing.JFrame {
     static ResultSet rs;
     public obat() {
         initComponents();
+        this.setLocationRelativeTo(null);
         setobat();
     }
     public void setobat(){
@@ -78,6 +79,7 @@ public class obat extends javax.swing.JFrame {
         jMenu5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1366, 768));
         getContentPane().setLayout(null);
 
         tabelobat.setModel(new javax.swing.table.DefaultTableModel(
@@ -226,12 +228,12 @@ public class obat extends javax.swing.JFrame {
        // id.getText(), nama_obat.getText(),kadal.getText(), Integer.parseInt(stock.getText()), fungsi.getText(), Integer.parseInt(harga.getText()
         DefaultTableModel model = (DefaultTableModel)tabelobat.getModel();
         int selectedRowIndex = tabelobat.getSelectedRow();
-        id.setText(model.getValueAt(selectedRowIndex, 1).toString());
+        id.setText(model.getValueAt(selectedRowIndex, 0).toString());
         kadal.setText(model.getValueAt(selectedRowIndex, 3).toString());
-        nama_obat.setText(model.getValueAt(selectedRowIndex, 2).toString());
+        nama_obat.setText(model.getValueAt(selectedRowIndex, 1).toString());
         stock.setText(model.getValueAt(selectedRowIndex, 4).toString());
-        fungsi.setText(model.getValueAt(selectedRowIndex, 5).toString());
-        harga.setText(model.getValueAt(selectedRowIndex, 6).toString());
+        fungsi.setText(model.getValueAt(selectedRowIndex, 2).toString());
+        harga.setText(model.getValueAt(selectedRowIndex, 5).toString());
     }//GEN-LAST:event_tabelobatMouseClicked
 
     /**

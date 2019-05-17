@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import javax.swing.JOptionPane;
 import java.sql.*;
 import java.util.*;
+import javax.swing.JPanel;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -22,7 +23,9 @@ public class view extends javax.swing.JFrame {
      */
     
     public view() {
+        
         initComponents();
+        this.setLocationRelativeTo(null);
     }
     
     public void showberhasil(){
@@ -77,7 +80,7 @@ public class view extends javax.swing.JFrame {
         jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(400, 300));
+        setMinimumSize(new java.awt.Dimension(1366, 768));
         getContentPane().setLayout(null);
 
         idDokter.addActionListener(new java.awt.event.ActionListener() {
@@ -225,7 +228,6 @@ public class view extends javax.swing.JFrame {
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel daftar_dokter;
     private javax.swing.JLabel daftar_pasien_baru;

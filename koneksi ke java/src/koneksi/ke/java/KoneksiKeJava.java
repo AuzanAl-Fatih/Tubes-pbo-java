@@ -97,7 +97,7 @@ static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
             
             // buat objek statement
             
-            String sql = "UPDATE obat SET tgl_kadaluarsa=?, jumlah=?, fungsi=?, harga=? where merk_obat=? AND id_obat=?";
+            String sql = "UPDATE obat SET tgl_kadaluarsa=?, jumlah=?, fungsi_obat=?, harga=? where merk_obat=? AND id_obat=?";
             try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
                 PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setString(1, tgl);

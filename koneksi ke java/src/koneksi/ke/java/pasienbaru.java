@@ -18,6 +18,8 @@ public class pasienbaru extends javax.swing.JFrame {
      */
     public pasienbaru() {
         initComponents();
+        
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -48,6 +50,7 @@ public class pasienbaru extends javax.swing.JFrame {
         jMenu5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1366, 768));
         getContentPane().setLayout(null);
 
         nama_pasien.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +90,7 @@ public class pasienbaru extends javax.swing.JFrame {
             }
         });
         getContentPane().add(id_pasien);
-        id_pasien.setBounds(980, 90, 200, 20);
+        id_pasien.setBounds(980, 80, 200, 30);
 
         Daftar_yoehh_pasien.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 18)); // NOI18N
         Daftar_yoehh_pasien.setText("Daftar");

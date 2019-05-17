@@ -30,6 +30,8 @@ public class pasienlama extends javax.swing.JFrame {
      */
     public pasienlama() {
         initComponents();
+        
+        this.setLocationRelativeTo(null);
         settab();
        
         
@@ -119,6 +121,7 @@ public class pasienlama extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTable2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1366, 768));
         getContentPane().setLayout(null);
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
@@ -142,9 +145,9 @@ public class pasienlama extends javax.swing.JFrame {
         getContentPane().add(jScrollPane3);
         jScrollPane3.setBounds(100, 590, 1130, 138);
         getContentPane().add(nama_pasien);
-        nama_pasien.setBounds(510, 180, 110, 20);
+        nama_pasien.setBounds(500, 160, 130, 40);
         getContentPane().add(berat_badan);
-        berat_badan.setBounds(1140, 280, 110, 20);
+        berat_badan.setBounds(800, 280, 130, 40);
 
         tinggi_badan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,7 +155,7 @@ public class pasienlama extends javax.swing.JFrame {
             }
         });
         getContentPane().add(tinggi_badan);
-        tinggi_badan.setBounds(1140, 170, 110, 20);
+        tinggi_badan.setBounds(800, 160, 130, 40);
 
         gol_darah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,7 +163,7 @@ public class pasienlama extends javax.swing.JFrame {
             }
         });
         getContentPane().add(gol_darah);
-        gol_darah.setBounds(510, 320, 110, 20);
+        gol_darah.setBounds(500, 310, 130, 40);
 
         riwayat_penyakit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,9 +171,9 @@ public class pasienlama extends javax.swing.JFrame {
             }
         });
         getContentPane().add(riwayat_penyakit);
-        riwayat_penyakit.setBounds(1140, 410, 110, 20);
+        riwayat_penyakit.setBounds(800, 400, 130, 40);
         getContentPane().add(umur);
-        umur.setBounds(510, 230, 110, 20);
+        umur.setBounds(500, 230, 130, 40);
 
         alergi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,7 +181,7 @@ public class pasienlama extends javax.swing.JFrame {
             }
         });
         getContentPane().add(alergi);
-        alergi.setBounds(510, 400, 110, 20);
+        alergi.setBounds(500, 390, 130, 40);
 
         update_yoeeh.setFont(new java.awt.Font("Rockwell Extra Bold", 0, 24)); // NOI18N
         update_yoeeh.setForeground(new java.awt.Color(255, 255, 255));
